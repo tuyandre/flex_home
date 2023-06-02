@@ -1,0 +1,8 @@
+{
+    "name": "botble/real-estate",
+    "description": "Real Estate",
+    "type": "package",
+    "require": {
+        "khaled.alshamaa/ar-php": "^6.3"
+    }
+}

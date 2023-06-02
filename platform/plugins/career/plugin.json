@@ -1,0 +1,10 @@
+{
+    "id": "botble/career",
+    "name": "Career",
+    "namespace": "Botble\\Career\\",
+    "provider": "Botble\\Career\\Providers\\CareerServiceProvider",
+    "author": "Botble Technologies",
+    "url": "https://botble.com",
+    "version": "1.0.0",
+    "description": "Career plugin"
+}
