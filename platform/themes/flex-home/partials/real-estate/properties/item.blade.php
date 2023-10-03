@@ -13,7 +13,13 @@
                 <span>{{ count($property->images) }}</span>
             </div>
         </div>
-        <div class="status">{!! $property->status->toHtml() !!}</div>
+{{--        <div class="status">{!! $property->status->toHtml() !!}</div>--}}
+        @if($property->status=='renting')
+            <div class="status"><span class="label-warning status-label"> For Rent</span></div>
+        @elseif($property->status=='selling')
+            <div class="status"><span class="label-success status-label"> For Sale</span></div>
+        @endif
+
         <ul class="item-price-wrap hide-on-list">
             <li class="h-type"><span title="{{ $property->category->name }}">{{ Str::limit($property->category->name, 20) }}</span></li>
             <li class="item-price"><span title="{{ format_price($property->price, $property->currency) }}">{{ format_price($property->price, $property->currency) }}</span></li>
